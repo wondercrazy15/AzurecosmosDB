@@ -1,0 +1,12 @@
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApi\AzureCosmosDBApi\bin\Debug\netcoreapp2.0\AzureCosmosDBApi.deps.json
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApi\AzureCosmosDBApi\bin\Debug\netcoreapp2.0\AzureCosmosDBApi.runtimeconfig.json
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApi\AzureCosmosDBApi\bin\Debug\netcoreapp2.0\AzureCosmosDBApi.runtimeconfig.dev.json
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApi\AzureCosmosDBApi\bin\Debug\netcoreapp2.0\AzureCosmosDBApi.dll
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApi\AzureCosmosDBApi\bin\Debug\netcoreapp2.0\AzureCosmosDBApi.pdb
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApi\AzureCosmosDBApi\obj\Debug\netcoreapp2.0\AzureCosmosDBApi.csproj.CoreCompileInputs.cache
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApi\AzureCosmosDBApi\obj\Debug\netcoreapp2.0\AzureCosmosDBApi.AssemblyInfoInputs.cache
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApi\AzureCosmosDBApi\obj\Debug\netcoreapp2.0\AzureCosmosDBApi.AssemblyInfo.cs
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApi\AzureCosmosDBApi\obj\Debug\netcoreapp2.0\AzureCosmosDBApi.dll
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApi\AzureCosmosDBApi\obj\Debug\netcoreapp2.0\AzureCosmosDBApi.pdb
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApi\AzureCosmosDBApi\bin\Debug\netcoreapp2.0\Microsoft.Azure.Documents.ServiceInterop.dll
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApi\AzureCosmosDBApi\obj\Debug\netcoreapp2.0\AzureCosmosDBApi.csprojAssemblyReference.cache

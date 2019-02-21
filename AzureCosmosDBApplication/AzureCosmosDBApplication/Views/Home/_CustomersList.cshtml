@@ -1,0 +1,92 @@
+﻿@model IEnumerable<AzureCosmosDBApplication.Models.CustomerRegModel>
+
+
+
+
+<h2>Customer List</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>OrderDate</th>
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Count() > 0)
+        {
+            int i = 1;
+            foreach (var item in Model)
+            {
+                <tr id="@item.id">
+                    <td>@i</td>
+                    <td class="FirstName">@item.FirstName</td>
+                    <td class="LastName">@item.LastName</td>
+                    <td class="OrderDate">@item.OrderDate</td>
+                    <td class="Country">@item.Country</td>
+                    <td class="State">@item.State</td>
+                    <td class="City">@item.City</td>
+                    <td>
+                        <a href="javascript:void(0)"
+                           onclick="EditCustomer('@item.id')">Edit</a>
+                        <a href="javascript:void(0)"
+                           onclick="DeleteCustomer('@item.id')">Delete</a>
+                    </td>
+                </tr>
+                i++;
+            }
+
+        }
+    </tbody>
+</table>
+
+<script>
+    function EditCustomer(custrId) {
+        $("#Id").val(custrId);
+        $("#FirstName").val($("#" + custrId).find("td.FirstName").text());
+        $("#LastName").val($("#" + custrId).find("td.LastName").text());
+        $("#OrderDate").val($("#" + custrId).find("td.OrderDate").text());
+        $("#Country").val($("#" + custrId).find("td.Country").text());
+        $("#State").val($("#" + custrId).find("td.State").text());
+        $("#City").val($("#" + custrId).find("td.City").text());
+    }
+
+    function DeleteCustomer(custrId) {
+        $.confirm({
+            title: 'Confirmation!',
+            content: 'Are you sure want to delete this customer!',
+            buttons: {
+                confirm: function () {
+                    DeleteCustomerById(custrId);
+                },
+                cancel: function () {
+                    // $.alert('Canceled!');
+                }
+            }
+        });
+
+    }
+
+    function DeleteCustomerById(id) {
+        $.ajax({
+            url: '/Home/DeleteCustomerById',
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: { 'Id': id },
+            success: function (result) {
+                location.reload();
+            },
+            error: function (result) {
+                $.alert('Something went wrong!');
+            },
+
+        });
+    }
+</script>
+
+

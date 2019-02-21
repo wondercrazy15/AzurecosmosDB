@@ -1,0 +1,104 @@
+﻿@model AzureCosmosDBApplication.Models.CustomerRegModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css" rel="stylesheet"/>*@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker3.standalone.min.css" rel="stylesheet" />
+<div class="container">
+    <div class="row">
+        <h2>Customer form</h2>
+        <form method="post" asp-controller="Home" asp-action="RegisterAsync">
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <input type="hidden" id="Id" name="Id" value="" />
+                        <label asp-for="FirstName"></label>
+                        <input asp-for="FirstName" class="form-control" autocomplete="off"/>
+                        <span asp-validation-for="FirstName"></span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label asp-for="LastName"></label>
+                        <input asp-for="LastName" class="form-control" autocomplete="off"/>
+                        <span asp-validation-for="LastName"></span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label asp-for="OrderDate"></label>
+                        <input asp-for="OrderDate" class="form-control datepicker" autocomplete="off"/>
+                        <span asp-validation-for="OrderDate"></span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="Country">Country:</label>
+                        <select class="form-control" asp-for="Country">
+                            <option value="">--Select--</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                        </select>
+                        <span asp-validation-for="Country"></span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="Country">State:</label>
+                        <select class="form-control" asp-for="State">
+                            <option value="">--Select--</option>
+                            <option value="GUJ">GUJ</option>
+                            <option value="MAH">MAH</option>
+                            <option value="NY">NY</option>
+                            <option value="CO">CO</option>
+                        </select>
+                        <span asp-validation-for="State"></span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="Country">City:</label>
+                        <select class="form-control" asp-for="City">
+                            <option value="">--Select--</option>
+                            <option value="Surat">Surat</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="NY">NY</option>
+                            <option value="Denver">Denver</option>
+                        </select>
+                        <span asp-validation-for="City"></span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-default" id="btnClear">Clear</button>
+        </form>
+    </div>
+
+
+    <div class="row">
+
+        @await Html.PartialAsync("/Views/Home/_CustomersList.cshtml", Model.customerRegModelsList)
+        @*@Html.RenderPartial("_CustomersList", Model.customerRegModelsList)*@
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".datepicker").datepicker({
+            format: "mm/dd/yyyy",
+            startDate: "d",
+            autoclose: true
+        });
+
+        $("#btnClear").click(function () { 
+            $("#Id,#FirstName,#LastName,#OrderDate,#Country,#State,#City").val('');
+        });
+
+    });
+</script>

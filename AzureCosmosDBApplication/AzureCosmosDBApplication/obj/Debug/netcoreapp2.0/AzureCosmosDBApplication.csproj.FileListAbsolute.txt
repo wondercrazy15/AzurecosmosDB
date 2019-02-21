@@ -1,0 +1,11 @@
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApplication\AzureCosmosDBApplication\bin\Debug\netcoreapp2.0\AzureCosmosDBApplication.deps.json
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApplication\AzureCosmosDBApplication\bin\Debug\netcoreapp2.0\AzureCosmosDBApplication.runtimeconfig.json
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApplication\AzureCosmosDBApplication\bin\Debug\netcoreapp2.0\AzureCosmosDBApplication.runtimeconfig.dev.json
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApplication\AzureCosmosDBApplication\bin\Debug\netcoreapp2.0\AzureCosmosDBApplication.dll
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApplication\AzureCosmosDBApplication\bin\Debug\netcoreapp2.0\AzureCosmosDBApplication.pdb
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApplication\AzureCosmosDBApplication\obj\Debug\netcoreapp2.0\AzureCosmosDBApplication.csproj.CoreCompileInputs.cache
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApplication\AzureCosmosDBApplication\obj\Debug\netcoreapp2.0\AzureCosmosDBApplication.AssemblyInfoInputs.cache
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApplication\AzureCosmosDBApplication\obj\Debug\netcoreapp2.0\AzureCosmosDBApplication.AssemblyInfo.cs
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApplication\AzureCosmosDBApplication\obj\Debug\netcoreapp2.0\AzureCosmosDBApplication.dll
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApplication\AzureCosmosDBApplication\obj\Debug\netcoreapp2.0\AzureCosmosDBApplication.pdb
+G:\ParvezalamKhan\RND\AzureCosmosDB\AzureCosmosDBApplication\AzureCosmosDBApplication\obj\Debug\netcoreapp2.0\AzureCosmosDBApplication.csprojAssemblyReference.cache
