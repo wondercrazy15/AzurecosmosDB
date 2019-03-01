@@ -91,9 +91,14 @@ namespace AzureCosmosDBApi.Controllers
         /// <summary>
         /// Cosmos DB Connection
         /// </summary>
-        public void CoonectCosmosDB()
+        public async Task<string> CoonectCosmosDB()
         {
             this.client = new DocumentClient(new Uri(EndpointUrl), PrimaryKey);
+
+            await this.client.CreateDatabaseIfNotExistsAsync(new Database { Id = databaseName });
+
+            await this.client.CreateDocumentCollectionIfNotExistsAsync(UriFactory.CreateDatabaseUri(databaseName), new DocumentCollection { Id = collectionName });
+            return null;
         }
 
         /// <summary>
